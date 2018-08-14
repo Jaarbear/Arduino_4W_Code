@@ -10,7 +10,7 @@ int EnB = 6;
 
 void setup() {
   
-  // 
+  // initializes serial connection at 9600 bits per second
   Serial.begin(9600);
 
   // setting pins to output
