@@ -109,4 +109,12 @@ void loop() {
     analogWrite(EnB, 255);
   }
 
+  // stops the car
+  if( time > 37000) {
+    digitalWrite(In1, LOW);
+    digitalWrite(In2, LOW);
+    digitalWrite(In3, LOW);
+    digitalWrite(In4, LOW);
+  }
+
 }
