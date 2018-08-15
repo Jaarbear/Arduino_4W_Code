@@ -39,8 +39,8 @@ void loop() {
     analogWrite(EnB, 255);
   }
 
-  // turns left for 2.8 seconds
-  if( time < 12800 && time > 10000) {
+  // turns left for 3 seconds
+  if( time < 13000 && time > 10000) {
     digitalWrite(In1, HIGH);
     digitalWrite(In2, LOW);
     digitalWrite(In3, HIGH);
@@ -50,7 +50,7 @@ void loop() {
   }
 
   // goes forward for 5 seconds
-   if(time < 18200 && time > 13200) {
+   if(time < 18000 && time > 13000) {
     digitalWrite(In1, HIGH);
     digitalWrite(In2, LOW);
     digitalWrite(In3, HIGH);
@@ -60,7 +60,7 @@ void loop() {
    }
 
    // stops car
-  if(time > 18200) {
+  if(time > 18000) {
     digitalWrite(In1, LOW);
     digitalWrite(In2, LOW);
     digitalWrite(In3, LOW);
